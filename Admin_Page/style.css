@@ -1,0 +1,175 @@
+/* =================================================================
+   MAIN STYLESHEET (style.css)
+   ================================================================= */
+
+/* Gaya umum untuk body */
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Gaya untuk tabel yang bisa di-scroll */
+.table-scroll {
+    overflow-x: auto;
+}
+
+/*
+   SIDEBAR STYLES
+*/
+
+/* Pengaturan dasar elemen aside sebagai sidebar utama */
+aside {
+    background-color: #1f2937; /* Warna latar belakang gelap */
+    width: 16rem; /* Lebar sidebar */
+    display: flex;
+    flex-direction: column;
+    color: #d1d5db; /* Warna teks default */
+    user-select: none; /* Mencegah teks di-select */
+    transition: transform 0.3s ease-in-out; /* Animasi transisi */
+    transform: translateX(0);
+    z-index: 30;
+    position: relative;
+}
+
+/* Style untuk sidebar saat disembunyikan */
+aside.hidden {
+    transform: translateX(-100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Style untuk sidebar saat terlihat di mode mobile */
+aside.visible {
+    transform: translateX(0);
+}
+
+/* Bagian logo di atas sidebar */
+aside .logo-section {
+    padding: 1.5rem 1.5rem;
+    border-bottom: 1px solid #374151; /* Garis pemisah */
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: white;
+}
+
+/* Kontainer utama navigasi */
+aside nav {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0.5rem;
+    gap: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    flex-grow: 1; /* Membuat nav mengisi sisa ruang */
+}
+
+/* Tombol utama untuk setiap grup menu (e.g., Member, Input Data) */
+aside nav>div.group>button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    background: none;
+    border: none;
+    color: #9ca3af;
+    cursor: pointer;
+}
+
+/* Efek hover pada tombol grup menu */
+aside nav>div.group>button:hover {
+    background-color: #111827;
+    color: #d1d5db;
+}
+
+/* Ikon di dalam tombol grup menu */
+aside nav>div.group>button i {
+    color: #9ca3af;
+    min-width: 1.25rem;
+    text-align: center;
+}
+
+/* Kontainer untuk submenu dropdown */
+aside nav>div.group>div, .dropdown {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-top: 0.25rem;
+    gap: 0.25rem;
+}
+
+/* Menyembunyikan dropdown secara default */
+.dropdown.hidden {
+    display: none;
+}
+
+/* Link di dalam dropdown */
+aside nav>div.group>div a, .dropdown a {
+    padding: 0.25rem 1rem;
+    border-radius: 0.375rem;
+    color: #9ca3af;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+/* Efek hover pada link dropdown */
+aside nav>div.group>div a:hover, .dropdown a:hover {
+    background-color: #111827;
+    color: #d1d5db;
+}
+
+/* Style untuk link yang aktif/terpilih */
+aside nav>div.group>div a.active,
+aside nav>div.group>div a.selected {
+    background-color: #111827;
+    color: #d1d5db;
+    font-weight: 600;
+}
+
+/* Lapisan overlay gelap saat sidebar aktif di mode mobile */
+#sidebar-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 20;
+}
+
+#sidebar-overlay.active {
+    display: block;
+}
+
+/* Aturan responsif untuk layar kecil (mobile) */
+@media (max-width: 768px) {
+    aside {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        transform: translateX(-100%);
+        box-shadow: 4px 0 8px rgba(0, 0, 0, 0.5);
+    }
+}
+
+/* TABLE STYLES (from view-member.html)
+*/
+
+/* CSS untuk rata tengah */
+.custom-table th, .custom-table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* CSS untuk sel yang sedang diedit */
+.editable {
+    background-color: #fef9c3; /* light yellow */
+    outline: 1px solid #facc15; /* yellow-400 */
+}

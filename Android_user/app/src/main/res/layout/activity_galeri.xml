@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".Galeri"
+    android:paddingTop="16dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:fitsSystemWindows="true"
+    android:paddingBottom="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/galeri"
+            android:textColor="@color/blue"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:id="@+id/scrollView_galeri"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Baris 1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:id="@+id/galeri_image_1"
+                        style="@style/GaleriImage"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/galeri1"
+                        android:contentDescription="@string/gambar_galeri_1" />
+
+                    <ImageView
+                        android:id="@+id/galeri_image_2"
+                        style="@style/GaleriImage"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/galeri2"
+                        android:contentDescription="@string/gambar_galeri_2" />
+                </LinearLayout>
+
+                <!-- Baris 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:id="@+id/galeri_image_3"
+                        style="@style/GaleriImage"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/galeri3"
+                        android:contentDescription="@string/gambar_galeri_3" />
+
+                    <ImageView
+                        android:id="@+id/galeri_image_4"
+                        style="@style/GaleriImage"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/galeri4"
+                        android:contentDescription="@string/gambar_galeri_4" />
+                </LinearLayout>
+
+                <!-- Baris 3 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:id="@+id/galeri_image_5"
+                        style="@style/GaleriImage"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/galeri5"
+                        android:contentDescription="@string/gambar_galeri_5" />
+
+                    <ImageView
+                        android:id="@+id/galeri_image_6"
+                        style="@style/GaleriImage"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/galeri6"
+                        android:contentDescription="@string/gambar_galeri_6" />
+                </LinearLayout>
+
+                <!-- Baris 4 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:id="@+id/galeri_image_7"
+                        style="@style/GaleriImage"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/galeri7"
+                        android:contentDescription="@string/gambar_galeri_7" />
+
+                    <ImageView
+                        android:id="@+id/galeri_image_8"
+                        style="@style/GaleriImage"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/galeri8"
+                        android:contentDescription="@string/gambar_galeri_8" />
+                </LinearLayout>
+
+                <!-- Baris 5 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:id="@+id/galeri_image_9"
+                        style="@style/GaleriImage"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/galeri9"
+                        android:contentDescription="@string/gambar_galeri_9" />
+
+                    <ImageView
+                        android:id="@+id/galeri_image_10"
+                        style="@style/GaleriImage"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/galeri10"
+                        android:contentDescription="@string/gambar_galeri_10" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

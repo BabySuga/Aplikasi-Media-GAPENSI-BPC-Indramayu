@@ -1,0 +1,79 @@
+# =================================================================
+# === Python / FastAPI Backend ===
+# =================================================================
+
+# Virtual Environment
+# Folder ini berisi semua library yang diinstal dan tidak boleh dikirim ke repo
+venv/
+.venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# File yang dihasilkan oleh IDE (misal: VS Code)
+.vscode/
+.idea/
+tempCodeRunnerFile.py
+
+# File environment yang berisi rahasia (SANGAT PENTING!)
+.env
+
+# File kredensial Firebase (SANGAT PENTING!)
+gapensi-firebase-firebase-adminsdk-fbsvc-f4e05a3366.json
+
+# File log dan database
+*.log
+*.sqlite3
+
+# File sementara yang dibuat saat upload gambar
+temp_*.jpg
+resized_*.jpg
+
+
+# =================================================================
+# === Android / Gradle ===
+# =================================================================
+
+# File yang dihasilkan oleh IDE (Android Studio, IntelliJ)
+*.iml
+.idea/
+.idea/libraries/
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
+
+# File Gradle
+.gradle/
+build/
+local.properties
+captures/
+
+# File output build
+*.apk
+*.aab
+*.ap_
+
+# File lain yang dihasilkan
+*.keystore
+*signing.properties
+
+
+# =================================================================
+# === File Umum Sistem Operasi (OS) ===
+# =================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini

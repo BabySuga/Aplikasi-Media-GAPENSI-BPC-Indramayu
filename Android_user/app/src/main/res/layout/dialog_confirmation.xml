@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/data_terkonfirmasi"
+        android:textSize="16sp"
+        android:lineSpacingExtra="4dp"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:lineSpacingExtra="4dp"
+        android:text="@string/konfirmasi_1"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_large" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/konfirmasi_2"
+        android:textSize="@dimen/text_size_large"
+        android:textColor="#787777"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/ok_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#3A3D9C"
+        android:text="@string/lanjut"
+        android:textColor="@android:color/white" />
+</LinearLayout>

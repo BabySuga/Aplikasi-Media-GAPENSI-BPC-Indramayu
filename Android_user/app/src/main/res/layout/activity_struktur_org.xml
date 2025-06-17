@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp"
+    android:fitsSystemWindows="true"
+    tools:context=".StrukturOrg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:text="@string/struktur_organisasi"
+            android:textColor="@color/blue"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bpc_gapensi_kabupaten_indramayu"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/masa_bakti_2024_2029"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/muscab_2024"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:paddingTop="8dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/penasehat"
+                android:background="#0D47A1"
+                android:textColor="@android:color/white"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true"/>
+            <TextView style="@style/NamaPenjabatStruktur" android:text="@string/penasehat_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaPenjabatStruktur" android:text="@string/penasehat_2" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaPenjabatStruktur" android:text="@string/penasehat_3" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaPenjabatStruktur" android:text="@string/penasehat_4" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaPenjabatStruktur" android:text="@string/penasehat_5" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ketua_kehormatan"
+                android:background="#0D47A1"
+                android:textColor="@android:color/white"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaPenjabatStruktur" android:text="@string/ketua_kehormatan_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaPenjabatStruktur" android:text="@string/ketua_kehormatan_2" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaPenjabatStruktur" android:text="@string/ketua_kehormatan_3" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaPenjabatStruktur" android:text="@string/ketua_kehormatan_4" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pengawas"
+                android:background="#0D47A1"
+                android:textColor="@android:color/white"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaPenjabatStruktur" android:text="@string/Ketua_pengawas_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaPenjabatStruktur" android:text="@string/Sekretaris_pengawas_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaPenjabatStruktur" android:text="@string/anggota_pengawas_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaPenjabatStruktur" android:text="@string/anggota_pengawas_2" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ketua"
+                android:background="#0D47A1"
+                android:textColor="@android:color/white"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaPenjabatStruktur" android:text="@string/ketua_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sekretaris"
+                android:background="#0D47A1"
+                android:textColor="@android:color/white"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaPenjabatStruktur" android:text="@string/sekretaris_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/JabatanBidangStruktur" android:text="@string/wakil_sekretaris_i" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaPenjabatSubStruktur" android:text="@string/wakil_sekre_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/JabatanBidangStruktur" android:text="@string/wakil_sekretaris_ii" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaPenjabatSubStruktur" android:text="@string/wakil_sekre_ii_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bendahara"
+                android:background="#0D47A1"
+                android:textColor="@android:color/white"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaPenjabatStruktur" android:text="@string/bendahara_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/JabatanBidangStruktur" android:text="@string/wakil_bendahara_i" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaPenjabatSubStruktur" android:text="@string/wakil_bendahara_i_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/JabatanBidangStruktur" android:text="@string/wakil_bendahara_ii" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaPenjabatSubStruktur" android:text="@string/wakil_bendahara_ii_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wakil_ketua_i"
+                android:background="#0D47A1"
+                android:textColor="@android:color/white"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true"/>
+            <TextView style="@style/NamaPenjabatStruktur" android:text="@string/wakil_ketua_i_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/JabatanBidangStruktur" android:text="@string/bidang_teknik" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaBidangStruktur" android:text="@string/bidang_teknik_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/JabatanBidangStruktur" android:text="@string/bidang_peningkatan_usaha_jasa_konstruksi" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaBidangStruktur" android:text="@string/bidang_peningkatan_usaha_jasa_konstruksi_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/JabatanBidangStruktur" android:text="@string/bidang_peningkatan_usaha_jasa_konstruksi_2" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaBidangStruktur" android:text="@string/bidang_peningkatan_usaha_jasa_konstruksi_3" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wakil_ketua_ii"
+                android:background="#0D47A1"
+                android:textColor="@android:color/white"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaPenjabatStruktur" android:text="@string/wakil_ketua_ii_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/JabatanBidangStruktur" android:text="@string/bidang_informasi_dan_komunikasi" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaBidangStruktur" android:text="@string/bidang_informasi_dan_komunikasi_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/JabatanBidangStruktur" android:text="@string/bidang_publikasi_dan_humas" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaBidangStruktur" android:text="@string/bidang_publikasi_dan_humas_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/JabatanBidangStruktur" android:text="@string/bidang_pengabdian_masyarakat" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaBidangStruktur" android:text="@string/bidang_pengabdian_masyarakat_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wakil_ketua_iii"
+                android:background="#0D47A1"
+                android:textColor="@android:color/white"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaPenjabatStruktur" android:text="@string/wakil_ketua_iii_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/JabatanBidangStruktur" android:text="@string/bidang_koperasi_dan_permodalan" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaBidangStruktur" android:text="@string/bidang_koperasi_dan_permodalan_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/JabatanBidangStruktur" android:text="@string/bidang_pengembangan_usaha" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaBidangStruktur" android:text="@string/bidang_pengembangan_usaha_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/JabatanBidangStruktur" android:text="@string/bidang_kemitraan_usaha" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaBidangStruktur" android:text="@string/bidang_kemitraan_usaha_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wakil_ketua_iv"
+                android:background="#0D47A1"
+                android:textColor="@android:color/white"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaPenjabatStruktur" android:text="@string/wakil_ketua_iv_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/JabatanBidangStruktur" android:text="@string/bidang_organisasi" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaBidangStruktur" android:text="@string/bidang_organisasi_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/JabatanBidangStruktur" android:text="@string/bidang_keanggotaan" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaBidangStruktur" android:text="@string/bidang_keanggotaan_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/JabatanBidangStruktur" android:text="@string/bidang_pemberdayaan_anggota" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaBidangStruktur" android:text="@string/bidang_pemberdayaan_anggota_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wakil_ketua_v"
+                android:background="#0D47A1"
+                android:textColor="@android:color/white"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaPenjabatStruktur" android:text="@string/wakil_ketua_v_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/JabatanBidangStruktur" android:text="@string/bidang_pembinaan_dan_pelatihan_sdm" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaBidangStruktur" android:text="@string/bidang_pembinaan_dan_pelatihan_sdm_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/JabatanBidangStruktur" android:text="@string/bidang_penelitian_dan_pengembangan" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaBidangStruktur" android:text="@string/bidang_penelitian_dan_pengembangan_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wakil_ketua_vi"
+                android:background="#0D47A1"
+                android:textColor="@android:color/white"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaPenjabatStruktur" android:text="@string/wakil_ketua_vi_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/JabatanBidangStruktur" android:text="@string/bidang_hukum_dan_perundang_undangan" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaBidangStruktur" android:text="@string/bidang_hukum_dan_perundang_undangan_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true"
+                tools:ignore="TooManyViews" />
+            <TextView style="@style/JabatanBidangStruktur" android:text="@string/bidang_perpajakan_dan_asuransi" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+            <TextView style="@style/NamaBidangStruktur" android:text="@string/bidang_perpajakan_dan_asuransi_1" android:textIsSelectable="true"
+                android:enabled="true"
+                android:focusable="true" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
