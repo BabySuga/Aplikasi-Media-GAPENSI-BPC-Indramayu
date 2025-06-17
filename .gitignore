@@ -62,6 +62,29 @@ captures/
 *.keystore
 *signing.properties
 
+# Semua folder build dan gradle (rekursif)
+**/build/
+**/.gradle/
+**/caches/
+**/captures/
+
+# Semua file APK, AAB
+**/*.apk
+**/*.aab
+
+# Android studio & gradle wrapper
+.gradle/
+gradle/
+*.iml
+local.properties
+
+# Ignore Android_user secara spesifik (opsional)
+Android_user/.gradle/
+Android_user/build/
+Android_user/caches/
+Android_user/captures/
+Android_user/**/*.apk
+Android_user/**/*.aab
 
 # =================================================================
 # === File Umum Sistem Operasi (OS) ===
