@@ -68,7 +68,6 @@ Proyek ini dikembangkan menggunakan kombinasi teknologi mobile dan backend yang 
 | Plotting | `matplotlib` | Visualisasi data |
 | Machine Learning | `tensorflow`, `scikit-learn` | Framework ML |
 | Image Utils | `imutils` | Utility OpenCV |
-| Face Recognition | `face_recognition` | API deteksi wajah |
 
 ### Aplikasi Android (Kotlin)
 
