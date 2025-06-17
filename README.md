@@ -128,6 +128,7 @@ python app.py
 - Buka Android Studio Meerkat | 2024.3.2 Patch 1
 - Pilih `File > Open`, arahkan ke `D:\Aplikasi\Android_user`
 - Sinkronkan Gradle dan pastikan BASE_URL pada Config.kt mengarah ke backend Anda:
+  
   ```bash
   object Config {
       const val BASE_URL = "http://10.0.2.2:8000"
@@ -140,5 +141,5 @@ python app.py
 - Pastikan URL API pada JavaScript sesuai dengan backend Anda `(API_BASE_URL).`
 
 
-Salam Hangat,
+Salam Hangat,\n
 Developer
