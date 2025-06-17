@@ -134,6 +134,7 @@ python app.py
       const val BASE_URL = "http://10.0.2.2:8000"
   }
   ```
+  
 - Jalankan aplikasi di emulator atau perangkat fisik.
 ### 4. Menjalankan Admin Page
 - Navigasi ke `D:\Aplikasi\Admin_Page`
@@ -141,5 +142,6 @@ python app.py
 - Pastikan URL API pada JavaScript sesuai dengan backend Anda `(API_BASE_URL).`
 
 
-Salam Hangat,\n
+Salam Hangat,
+
 Developer
