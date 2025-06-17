@@ -80,6 +80,7 @@ local.properties
 
 # Ignore Android_user secara spesifik (opsional)
 Android_user/.gradle/
+Android_user/wrapper/
 Android_user/build/
 Android_user/caches/
 Android_user/captures/
