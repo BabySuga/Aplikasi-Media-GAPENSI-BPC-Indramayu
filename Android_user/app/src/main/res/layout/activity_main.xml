@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F5"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:baselineAligned="false"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/grid_button_padding"
+        android:paddingBottom="@dimen/grid_button_padding"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/header_height"
+            android:layout_weight="0.6"
+            android:orientation="horizontal"
+            android:gravity="start|center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/logo_gapensi_text"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo_gapensi" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/header_height"
+            android:layout_weight="0.4"
+            android:layout_marginStart="@dimen/small_margin"
+            android:backgroundTintMode="src_atop"
+            android:clipToPadding="false"
+            android:elevation="2dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/userIconImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/user_icon_height"
+                android:contentDescription="@string/user_icon"
+                android:padding="@dimen/small_margin"
+                android:src="@drawable/person" />
+
+            <TextView
+                android:id="@+id/userNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="@string/user_name"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_medium"
+                android:lines="1" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/bannerSlider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/banner_height"
+                android:layout_marginTop="@dimen/grid_button_padding"
+                android:layout_marginHorizontal="@dimen/grid_margin" />
+
+            <GridLayout
+                android:id="@+id/gridNavigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/grid_margin"
+                android:layout_marginTop="@dimen/grid_margin"
+                android:background="#e6e6f0"
+                android:columnCount="4"
+                android:elevation="4dp"
+                android:padding="@dimen/grid_margin"
+                android:rowOrderPreserved="false">
+
+                <LinearLayout
+                    android:id="@+id/button_pengumuman"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="@dimen/small_margin"
+                    android:background="@drawable/rounded_button_background"
+                    android:clickable="true"
+                    android:elevation="2dp"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/grid_button_padding"
+                    android:clipChildren="false">
+
+                    <ImageView
+                        android:layout_width="@dimen/grid_button_icon_size"
+                        android:layout_height="@dimen/grid_button_icon_size"
+                        android:contentDescription="@string/pengumuman"
+                        android:src="@drawable/icon_pengumuman" />
+
+                    <com.example.android_user.MarqueeTextView
+                        android:id="@+id/text_pengumuman"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pengumuman_Main"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/text_size_small"
+                        android:textAlignment="viewStart" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button_profil"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="@dimen/small_margin"
+                    android:background="@drawable/rounded_button_background"
+                    android:clickable="true"
+                    android:elevation="2dp"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/grid_button_padding"
+                    android:clipChildren="false">
+
+                    <ImageView
+                        android:layout_width="@dimen/grid_button_icon_size"
+                        android:layout_height="@dimen/grid_button_icon_size"
+                        android:contentDescription="@string/profil"
+                        android:src="@drawable/icon_profile" />
+
+                    <com.example.android_user.MarqueeTextView
+                        android:id="@+id/text_profil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profil"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/text_size_small"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button_struktur_organisasi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="@dimen/small_margin"
+                    android:background="@drawable/rounded_button_background"
+                    android:clickable="true"
+                    android:elevation="2dp"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/grid_button_padding"
+                    android:clipChildren="false">
+
+                    <ImageView
+                        android:layout_width="@dimen/grid_button_icon_size"
+                        android:layout_height="@dimen/grid_button_icon_size"
+                        android:contentDescription="@string/struktur_organisasi"
+                        android:src="@drawable/icon_struktur_organisasi" />
+
+                    <com.example.android_user.MarqueeTextView
+                        android:id="@+id/text_struktur_organisasi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/struktur_organisasi_Main"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/text_size_small"
+                        android:textAlignment="viewStart" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button_daftar_anggota"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="@dimen/small_margin"
+                    android:background="@drawable/rounded_button_background"
+                    android:clickable="true"
+                    android:elevation="2dp"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/grid_button_padding"
+                    android:clipChildren="false">
+
+                    <ImageView
+                        android:layout_width="@dimen/grid_button_icon_size"
+                        android:layout_height="@dimen/grid_button_icon_size"
+                        android:contentDescription="@string/informasi"
+                        android:src="@drawable/icon_daftar_anggota" />
+
+                    <com.example.android_user.MarqueeTextView
+                        android:id="@+id/text_daftar_anggota"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/daftar_anggota_Main"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/text_size_small"
+                        android:textAlignment="viewStart" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button_galeri"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="@dimen/small_margin"
+                    android:background="@drawable/rounded_button_background"
+                    android:clickable="true"
+                    android:elevation="2dp"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/grid_button_padding"
+                    android:clipChildren="false">
+
+                    <ImageView
+                        android:layout_width="@dimen/grid_button_icon_size"
+                        android:layout_height="@dimen/grid_button_icon_size"
+                        android:contentDescription="@string/galeri"
+                        android:src="@drawable/icon_galeri" />
+
+                    <com.example.android_user.MarqueeTextView
+                        android:id="@+id/text_galeri"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/galeri"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/text_size_small"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button_fasilitas"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="@dimen/small_margin"
+                    android:background="@drawable/rounded_button_background"
+                    android:clickable="true"
+                    android:elevation="2dp"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/grid_button_padding"
+                    android:clipChildren="false">
+
+                    <ImageView
+                        android:layout_width="@dimen/grid_button_icon_size"
+                        android:layout_height="@dimen/grid_button_icon_size"
+                        android:contentDescription="@string/fasilitas"
+                        android:src="@drawable/icon_facility" />
+
+                    <com.example.android_user.MarqueeTextView
+                        android:id="@+id/text_fasilitas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fasilitas_Main"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/text_size_small"
+                        android:textAlignment="viewStart" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button_kontak"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="@dimen/small_margin"
+                    android:background="@drawable/rounded_button_background"
+                    android:clickable="true"
+                    android:elevation="2dp"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/grid_button_padding"
+                    android:clipChildren="false">
+
+                    <ImageView
+                        android:layout_width="@dimen/grid_button_icon_size"
+                        android:layout_height="@dimen/grid_button_icon_size"
+                        android:contentDescription="@string/kontak"
+                        android:src="@drawable/icon_contact" />
+
+                    <com.example.android_user.MarqueeTextView
+                        android:id="@+id/text_kontak_Main"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:singleLine="true"
+                        android:text="@string/kontak"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/text_size_small"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button_logout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="@dimen/small_margin"
+                    android:background="@drawable/rounded_button_background"
+                    android:clickable="true"
+                    android:elevation="2dp"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/grid_button_padding"
+                    android:clipChildren="false">
+
+                    <ImageView
+                        android:layout_width="@dimen/grid_button_icon_size"
+                        android:layout_height="@dimen/grid_button_icon_size"
+                        android:contentDescription="@string/logout"
+                        android:src="@drawable/icon_logout" />
+
+                    <com.example.android_user.MarqueeTextView
+                        android:id="@+id/text_logout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:singleLine="true"
+                        android:text="@string/logout"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/text_size_small"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </GridLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/grid_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pengumuman_terbaru"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_extra_large"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/grid_margin"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewPengumuman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/grid_margin"
+                android:layout_marginTop="@dimen/grid_margin"
+                android:layout_marginBottom="@dimen/grid_margin"
+                android:background="@android:color/white"
+                android:padding="@dimen/grid_button_padding"
+                android:nestedScrollingEnabled="false" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

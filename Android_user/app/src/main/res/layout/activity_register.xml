@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".Register">
+
+    <!-- Top Blue Background -->
+    <View
+        android:id="@+id/top_background"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:background="@drawable/banner_bg_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Back Icon -->
+
+    <!-- Register Title -->
+    <TextView
+        android:id="@+id/register_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jargon_register"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/top_background"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/register_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/media_gapensi"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/register_title"
+        app:layout_constraintStart_toStartOf="@id/register_title"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Upload KTP Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ktp_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:layout_constraintTop_toBottomOf="@id/register_subtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Upload Text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="@string/register_1"
+                android:textSize="14sp" />
+
+            <!-- Upload Box -->
+            <ImageView
+                android:id="@+id/image_upload"
+                android:layout_width="286dp"
+                android:layout_height="139dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/card_background2"
+                android:contentDescription="@string/input_ktp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_galeri"
+                app:tint="@color/white" />
+
+            <!-- Atau -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="1dp"
+                    android:background="#000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/atau"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="1dp"
+                    android:background="#000" />
+            </LinearLayout>
+
+            <!-- Foto Langsung -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="@string/register_2" />
+
+            <!-- Camera Button -->
+            <ImageButton
+                android:id="@+id/button_camera"
+                android:layout_width="97dp"
+                android:layout_height="66dp"
+                android:background="@drawable/card_background2"
+                android:contentDescription="@string/input_ktp_camera"
+                android:scaleType="centerInside"
+                android:src="@drawable/logo_camera" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Login Link -->
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jargon_login"
+        android:textColor="#3A3D9C"
+        android:textSize="14sp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/ktp_card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingTop="16dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="16dp"
+    android:fitsSystemWindows="true"
+    tools:context=".Fasilitas">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/fasilitas"
+        android:textColor="@color/blue" android:textSize="24sp"
+        android:textStyle="bold" />
+
+        <ScrollView
+            android:id="@+id/scrollView_fasilitas" android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tampak_depan"
+                    android:background="@color/blue_label_fasilitas" android:textColor="@android:color/white"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="24dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:id="@+id/fasilitas_lobby_1"
+                        style="@style/FasilitasImage"
+                        android:src="@drawable/gedungdepan" android:contentDescription="@string/gambar_gedung_tampak_depan"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/r_meeting"
+                    android:background="@color/blue_label_fasilitas"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="24dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:id="@+id/fasilitas_meeting_1"
+                        style="@style/FasilitasImage"
+                        android:src="@drawable/ruangmeeting"
+                        android:contentDescription="@string/gambar_ruang_meeting"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ruang_ketua_umum"
+                    android:background="@color/blue_label_fasilitas"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="24dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:id="@+id/fasilitas_ketum_1"
+                        style="@style/FasilitasImage"
+                        android:src="@drawable/ruangketum"
+                        android:contentDescription="@string/gambar_ketum_1"/>
+
+                    <ImageView
+                        android:id="@+id/fasilitas_ketum_2"
+                        style="@style/FasilitasImage"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/ruangketum2"
+                        android:contentDescription="@string/gambar_ketum_2"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:text="@string/ruang_kerja"
+                    android:background="@color/blue_label_fasilitas"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="24dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:id="@+id/fasilitas_ruangkerja"
+                        style="@style/FasilitasImage"
+                        android:src="@drawable/ruangkerja" android:contentDescription="@string/gambar_ruang_kerja"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lobi"
+                    android:background="@color/blue_label_fasilitas"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="24dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:id="@+id/fasilitas_lobi"
+                        style="@style/FasilitasImage"
+                        android:src="@drawable/lobi" android:contentDescription="@string/gambar_ruang_lobby"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mushola_dan_tempat_wudhu"
+                    android:background="@color/blue_label_fasilitas"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="24dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:id="@+id/fasilitas_mushola"
+                        style="@style/FasilitasImage"
+                        android:src="@drawable/mushola1" android:contentDescription="@string/gambar_mushola"/>
+
+                    <ImageView
+                        android:id="@+id/fasilitas_tempatwudhu"
+                        style="@style/FasilitasImage"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/tempatwudhu" android:contentDescription="@string/gambar_tempat_wudhu"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/background"
+    tools:context=".com.example.android_user.MainActivity">
+
+    <!-- Status Bar (Simulasi) -->
+    <View android:id="@+id/statusBar" android:layout_width="0dp"
+        android:layout_height="@dimen/status_bar_height" android:background="@color/primary_blue"
+        app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Header -->
+    <LinearLayout android:id="@+id/header" android:layout_width="0dp"
+        android:layout_height="wrap_content" android:background="@color/white"
+        android:orientation="horizontal" android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp" android:elevation="4dp" android:clipToPadding="false"
+        android:clipChildren="false" android:translationZ="4dp" android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/statusBar"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="horizontal"
+            android:gravity="center_vertical" android:clipToPadding="false"
+            android:clipChildren="false">
+
+            <ImageView android:id="@+id/logo" android:layout_width="40dp"
+                android:layout_height="40dp" android:src="@drawable/gapensi_logo"
+                android:contentDescription="@string/gapensi_logo_desc" />
+
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:orientation="vertical" android:layout_marginStart="12dp">
+
+                <TextView android:id="@+id/title" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="@string/gapensi_title"
+                    android:textColor="@color/primary_blue_dark" android:textSize="16sp"
+                    android:fontFamily="@font/roboto_bold" android:lineSpacingExtra="-4sp" />
+
+                <LinearLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView android:id="@+id/bpc_label" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="@string/bpc_label"
+                        android:background="@color/primary_blue_darker"
+                        android:textColor="@color/white" android:textSize="10sp"
+                        android:fontFamily="@font/roboto_bold" android:paddingHorizontal="8dp"
+                        android:paddingVertical="1dp" />
+
+                    <TextView android:id="@+id/indramayu_label" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="@string/indramayu_label"
+                        android:textColor="@color/gray_800" android:textSize="10sp"
+                        android:fontFamily="@font/roboto_bold" android:layout_marginStart="4dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:orientation="vertical" android:paddingHorizontal="12dp"
+                android:paddingVertical="8dp" android:gravity="center_horizontal">
+
+                <LinearLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_background_blue" android:gravity="center"
+                    android:layout_marginBottom="4dp">
+
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp"
+                        android:src="@drawable/ic_user"
+                        android:contentDescription="@string/user_icon_desc" />
+                </LinearLayout>
+
+                <TextView android:id="@+id/date_day" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="@string/date_day"
+                    android:textColor="@color/black" android:textSize="16sp"
+                    android:fontFamily="@font/roboto_bold" />
+
+                <TextView android:id="@+id/date_month" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="@string/date_month"
+                    android:textColor="@color/gray_700" android:textSize="10sp"
+                    android:fontFamily="@font/roboto_bold" android:lineSpacingExtra="-2sp" />
+
+                <TextView android:id="@+id/date_year" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="@string/date_year"
+                    android:textColor="@color/gray_400" android:textSize="9sp"
+                    android:fontFamily="@font/roboto_light" android:lineSpacingExtra="-2sp" />
+
+                <TextView android:id="@+id/name_user" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="@string/name_user"
+                    android:textColor="@color/black" android:textSize="12sp"
+                    android:fontFamily="@font/roboto_bold" android:layout_marginTop="4dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <!-- Banner -->
+    <androidx.cardview.widget.CardView android:id="@+id/banner" android:layout_width="0dp"
+        android:layout_height="wrap_content" android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="16dp" app:cardCornerRadius="12dp" app:cardElevation="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent">
+
+        <FrameLayout android

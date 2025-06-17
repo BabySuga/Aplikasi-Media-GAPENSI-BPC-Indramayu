@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/textViewNo"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
+        android:background="@drawable/table_cell_background"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:textIsSelectable="true"
+        android:enabled="true"
+        android:focusable="true"
+        android:contentDescription="@string/no_column" />
+
+    <TextView
+        android:id="@+id/textViewBadanUsaha"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2"
+        android:background="@drawable/table_cell_background"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:padding="8dp"
+        android:textIsSelectable="true"
+        android:enabled="true"
+        android:focusable="true"
+        android:contentDescription="@string/nama_perusahaan_column" />
+
+    <TextView
+        android:id="@+id/textViewPimpinan"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/table_cell_background"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:padding="8dp"
+        android:textIsSelectable="true"
+        android:enabled="true"
+        android:focusable="true"
+        android:contentDescription="@string/nama_pimpinan_column" />
+
+    <TextView
+        android:id="@+id/textViewAlamat"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.8"
+        android:background="@drawable/table_cell_background"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:padding="8dp"
+        android:textIsSelectable="true"
+        android:enabled="true"
+        android:focusable="true"
+        android:contentDescription="@string/alamat_column" />
+
+</LinearLayout>

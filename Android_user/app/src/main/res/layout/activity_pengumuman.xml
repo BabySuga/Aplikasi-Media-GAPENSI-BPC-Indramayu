@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp"
+    android:fitsSystemWindows="true"
+    tools:context=".PengumumanActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:text="@string/daftar_pengumuman"
+        android:textColor="@color/blue"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Banner Gambar di Tengah -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/banner1"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/banner" />
+
+    <!-- ProgressBar Loading -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+
+    <!-- RecyclerView daftar pengumuman -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewPengumuman"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:paddingBottom="8dp"
+        android:clipToPadding="false" />
+
+</LinearLayout>

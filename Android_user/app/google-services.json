@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "690379634982",
+    "firebase_url": "https://gapensi-firebase-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "gapensi-firebase",
+    "storage_bucket": "gapensi-firebase.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:690379634982:android:80553e7a02969cea9029e7",
+        "android_client_info": {
+          "package_name": "com.example.android_user"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhFtxdEfq1TsDKU2X91U_mAgmSSyKoou8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

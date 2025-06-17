@@ -1,0 +1,230 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Media Gapensi BPC Indramayu</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="login">Login</string>
+    <string name="email_text">Email</string>
+    <string name="password">Password</string>
+    <string name="media_gapensi">Media Gapensi BPC indramayu</string>
+    <string name="back">Back</string>
+    <string name="logo_gapensi">Logo Gapensi</string>
+    <string name="kontak">Kontak</string>
+    <string name="kontak_Main">Kontak&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="profil">Profil</string>
+    <string name="profil_Main">Profil&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="fasilitas">Fasilitas</string>
+    <string name="fasilitas_Main">Fasilitas&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="admin_call">Admin Call</string>
+    <string name="admin_chat_whatsapp">Admin Chat (Whatsapp)</string>
+    <string name="instagram_gapensi">"@BPCGapensiIndramayu"</string>
+    <string name="instagram">Instagram</string>
+    <string name="gapensi">BPCGapensiIndramayu</string>
+    <string name="facebook">Facebook</string>
+    <string name="gapensi_spasi">BPC Gapensi Indramayu</string>
+    <string name="email_gapensi">admin@gmail.com</string>
+    <string name="web">Web</string>
+    <string name="link">https://gapensi.or.id/bpc/kabupatenindramayu</string>
+    <string name="logo_gapensi_text">Logo Gapensi Text</string>
+    <string name="user_icon">User Icon</string>
+    <string name="user_name">User Name</string>
+    <string name="pengumuman_Main">Pengumuman&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="pengumuman">Pengumuman</string>
+    <string name="daftar_pengumuman">Daftar Pengumuman</string>
+    <string name="struktur_organisasi">Struktur Organisasi</string>
+    <string name="struktur_organisasi_Main">Struktur Organisasi&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="informasi">Informasi</string>
+    <string name="daftar_anggota">Daftar Anggota</string>
+    <string name="daftar_anggota_Main">Daftar Anggota&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="galeri">Galeri</string>
+    <string name="pengumuman_terbaru">Pengumuman Terbaru</string>
+    <string name="gambar">gambar</string>
+    <string name="jargon_register">Belum Register? Register Disini</string>
+    <string name="banner">Banner</string>
+    <string name="unduh_logo">Unduh logo</string>
+    <string name="definisi_gapensi">
+        <![CDATA[
+            <html>
+            <head>
+                <style type=\"text/css\">
+                    body {
+                        text-align: justify;
+                        margin: 10px;
+                        font-family: sans-serif;
+                        font-size: 16px;
+                        color: #333333;
+                    }
+                </style>
+            </head>
+            <body>
+                <p>GAPENSI (Gabungan Pengusaha Nasional Indonesia) adalah organisasi yang didirikan pada tahun 1959 dengan tujuan utama untuk memajukan dunia usaha konstruksi nasional. Organisasi ini bertujuan mengembangkan kemampuan anggotanya melalui berbagai program pelatihan, advokasi kebijakan, dan peningkatan standar mutu dalam industri konstruksi. GAPENSI memiliki peran strategis dalam mendukung pemerintah dalam pembangunan infrastruktur serta meningkatkan daya saing pengusaha konstruksi lokal di pasar domestik dan internasional.</p>
+                <p>Selain itu, GAPENSI juga aktif dalam menjalin kerja sama dengan berbagai pihak, termasuk pemerintah, asosiasi lain, dan sektor swasta, untuk menciptakan ekosistem bisnis konstruksi yang kondusif. Dengan motto \"Membangun Bangsa\", GAPENSI terus berkomitmen memberikan kontribusi nyata terhadap pembangunan nasional melalui penguatan kapasitas anggota dan peningkatan kualitas proyek-proyek konstruksi di Indonesia.</p>
+            </body>
+            </html>
+        ]]>
+    </string>
+    <string name="gedung_gapensi">gedung_gapensi</string>
+    <string name="alamat_gapensi">Jl. Siliwangi No.12, Margadadi, Kec. Indramayu, Kabupaten Indramayu, Jawa Barat 45219</string>
+    <string name="register_1">Silahkan Upload Gambar KTP Anda</string>
+    <string name="input_ktp">input_ktp</string>
+    <string name="atau">Atau</string>
+    <string name="register_2">Foto Langsung Gambar KTP Anda</string>
+    <string name="input_ktp_camera">Ambil Foto KTP</string>
+    <string name="jargon_login">Sudah Register? Login Disini</string>
+    <string name="gambar_pengumuman">Gambar Pengumuman</string>
+    <string name="judul_pengumuman">Judul Pengumuman</string>
+    <string name="jam">jam</string>
+    <string name="tanggal">01/05/2025</string>
+    <string name="isi_pengumuman">Isi pengumuman singkat akan ditampilkan di sini…</string>
+    <string name="baca_selengkapnya">Baca Selengkapnya</string>
+    <string name="selengkapnya">Selengkapnya</string>
+    <string name="guest_user">Guest</string>
+    <string name="perintah_emailperusahan">Mohon isi Email anda dan\n Nama Perusahaan</string>
+    <string name="instruksi_email">Isi Email anda agar admin dapat memberi akses berupa ID dan Password untuk Login</string>
+    <string name="sample_email">example@gmail.com</string>
+    <string name="lanjut">Lanjut</string>
+    <string name="data_terkonfirmasi">Data anda sudah terupload ✔</string>
+    <string name="konfirmasi_1">Silakan tunggu email dari admin yang berisi ID dan password.</string>
+    <string name="konfirmasi_2">Selalu periksa email Anda, termasuk folder Spam.</string>
+    <string name="hintnamaPerusahaan">Isi Nama Perusahaan Disini</string>
+    <string name="gambar_galeri_1" tools:ignore="Typos">gambar_galeri_1</string>
+    <string name="gambar_galeri_10">gambar_galeri_10</string>
+    <string name="gambar_galeri_2">gambar_galeri_2</string>
+    <string name="gambar_galeri_3">gambar_galeri_3</string>
+    <string name="gambar_galeri_9">gambar_galeri_9</string>
+    <string name="gambar_galeri_8">gambar_galeri_8</string>
+    <string name="gambar_galeri_7">gambar_galeri_7</string>
+    <string name="gambar_galeri_4">gambar_galeri_4</string>
+    <string name="gambar_galeri_5">gambar_galeri_5</string>
+    <string name="gambar_galeri_6">gambar_galeri_6</string>
+    <string name="gambar_fasilitas_1" tools:ignore="Typos">gambar_fasilitas_1</string>
+    <string name="gambar_fasilitas_2">gambar_fasilitas_2</string>
+    <string name="gambar_fasilitas_3">gambar_fasilitas_3</string>
+    <string name="gambar_fasilitas_4">gambar_fasilitas_4</string>
+    <string name="gambar_galeri_ukuran_penuh">Gambar Galeri Ukuran Penuh</string>
+    <string name="tutup_tampilan_penuh">Tutup Tampilan Penuh</string>
+    <string name="logout">Logout</string>
+    <string name="truncated_text">%1$s…</string>
+    <string name="opening_announcement">Membuka: %1$s</string>
+    <string name="memuat">Memuat…</string>
+    <string name="no_members_found">Tidak ada anggota terdaftar.</string>
+    <string name="failed_load_members">Gagal memuat daftar anggota.</string>
+    <string name="connection_failed_members">Koneksi Gagal: %1$s</string>
+    <string name="daftar_anggota_badan_usaha_bpc">Daftar Anggota Badan Usaha BPC</string>
+    <string name="no_column">No</string>
+    <string name="nama_perusahaan_column">Nama Perusahaan</string>
+    <string name="nama_pimpinan_column">Nama</string>
+    <string name="alamat_column">Alamat</string>
+    <string name="rt_rw_format">RT/RW %1$s/%2$s</string>
+    <string name="alamat_part_separator">, </string>
+    <string name="number_format">%1$d</string>
+    <string name="no_column_description">Nomor urut: %1$s</string>
+    <string name="nama_perusahaan_column_description">Nama perusahaan: %1$s</string>
+    <string name="nama_pimpinan_column_description">Nama pimpinan: %1$s</string>
+    <string name="alamat_column_description">Alamat: %1$s</string>
+    <string name="no">No</string>
+    <string name="nama_perusahaan">Nama Perusahaan</string>
+    <string name="nama_pimpinan">Nama Pimpinan</string>
+    <string name="alamat">Alamat</string>
+    <string name="unduh_gambar">unduh_gambar</string>
+    <string name="close">Tutup</string>
+    <string name="download">Unduh gambar</string>
+    <string name="full_screen_download">Full Screen Download</string>
+    <string name="username">Username</string>
+    <string name="tampak_depan">Tampak Depan</string>
+    <string name="gambar_gedung_tampak_depan">Gambar Gedung Tampak Depan</string>
+    <string name="r_meeting">R. Meeting</string>
+    <string name="gambar_ruang_meeting">Gambar Ruang Meeting</string>
+    <string name="ruang_ketua_umum">Ruang Ketua Umum</string>
+    <string name="gambar_ketum_1">Gambar Ketum 1</string>
+    <string name="gambar_ketum_2">Gambar Ketum 2</string>
+    <string name="ruang_kerja">Ruang Kerja</string>
+    <string name="gambar_ruang_kerja">Gambar Ruang Kerja</string>
+    <string name="lobi">Lobi</string>
+    <string name="gambar_ruang_lobby">Gambar Ruang Lobby</string>
+    <string name="mushola_dan_tempat_wudhu">Mushola dan Tempat Wudhu</string>
+    <string name="gambar_mushola">Gambar Mushola</string>
+    <string name="gambar_tempat_wudhu">Gambar Tempat Wudhu</string>
+    <string name="bpc_gapensi_kabupaten_indramayu">BPC GAPENSI KABUPATEN INDRAMAYU</string>
+    <string name="masa_bakti_2024_2029">MAS BAKTI 2024 – 2029</string>
+    <string name="muscab_2024">MUSCAB 2024</string>
+    <string name="penasehat">PENASEHAT</string>
+    <string name="penasehat_1">1. BUPATI INDRAMAYU</string>
+    <string name="penasehat_2">2. KETUA DPRD INDRAMAYU</string>
+    <string name="penasehat_3">3. KETUA KADIN INDRAMAYU</string>
+    <string name="penasehat_4">4. DANDIM 0616 INDRAMAYU</string>
+    <string name="penasehat_5">5. KAPOLRES INDRAMAYU</string>
+    <string name="ketua_kehormatan">KETUA KEHORMATAN</string>
+    <string name="ketua_kehormatan_1">1. Drs. H. A. DJAHIDIN</string>
+    <string name="ketua_kehormatan_2">2. H. R. HERBAYU</string>
+    <string name="ketua_kehormatan_3">3. H. URYANTO HADI, SH., SE.</string>
+    <string name="ketua_kehormatan_4">4. H. MAMAN SUPARMAN YAHYA</string>
+    <string name="pengawas">PENGAWAS</string>
+    <string name="Ketua_pengawas_1">KETUA : MULYADI CAHYA, S.I.KOM.</string>
+    <string name="Sekretaris_pengawas_1">SEKRETARIS : H. SUGONO, SH.</string>
+    <string name="anggota_pengawas_1">ANGGOTA : ROCHMAN, B.Sc.</string>
+    <string name="anggota_pengawas_2">ANGGOTA : H. SUDARJA</string>
+    <string name="ketua">KETUA</string>
+    <string name="ketua_1">H. JAMAL FAHMI BAZRI, SH.</string>
+    <string name="sekretaris">SEKRETARIS</string>
+    <string name="sekretaris_1">MAHMUD YASIN, SM.</string>
+    <string name="wakil_sekretaris_i">WAKIL SEKRETARIS I</string>
+    <string name="wakil_sekre_1">HJ. INCE PURNAMA, SH.</string>
+    <string name="wakil_sekretaris_ii">WAKIL SEKRETARIS II</string>
+    <string name="wakil_sekre_ii_1">HJ. WAHYUNAH</string>
+    <string name="bendahara">BENDAHARA</string>
+    <string name="bendahara_1">RACHMAT JAJULI</string>
+    <string name="wakil_bendahara_i">WAKIL BENDAHARA I</string>
+    <string name="wakil_bendahara_i_1">HJ. KAROMAH</string>
+    <string name="wakil_bendahara_ii">WAKIL BENDAHARA II</string>
+    <string name="wakil_bendahara_ii_1">MOCHAMAD IKHSAN</string>
+    <string name="wakil_ketua_i">WAKIL KETUA I</string>
+    <string name="wakil_ketua_i_1">MUHAMMAD SANAFI, ST.</string>
+    <string name="bidang_teknik">BIDANG TEKNIK</string>
+    <string name="bidang_teknik_1">H. AGUS SUWARJONO, ST.</string>
+    <string name="bidang_peningkatan_usaha_jasa_konstruksi">BIDANG PENINGKATAN USAHA JASA KONSTRUKSI</string>
+    <string name="bidang_peningkatan_usaha_jasa_konstruksi_1">FIRDAUS S. YUSUF</string>
+    <string name="bidang_peningkatan_usaha_jasa_konstruksi_2">BIDANG HUBUNGAN KELEMBAGAAN</string>
+    <string name="bidang_peningkatan_usaha_jasa_konstruksi_3">TOPAS WIJAYARDI, S.Sos, M.A.P</string>
+    <string name="wakil_ketua_ii">WAKIL KETUA II</string>
+    <string name="wakil_ketua_ii_1">AKHMAD SUAEDI, SH.</string>
+    <string name="bidang_informasi_dan_komunikasi">BIDANG INFORMASI DAN KOMUNIKASI</string>
+    <string name="bidang_informasi_dan_komunikasi_1">VIJAY KHAERUL RIEKI</string>
+    <string name="bidang_publikasi_dan_humas">BIDANG PUBLIKASI DAN HUMAS</string>
+    <string name="bidang_publikasi_dan_humas_1">NANANG MANSUR</string>
+    <string name="bidang_pengabdian_masyarakat">BIDANG PENGABDIAN MASYARAKAT</string>
+    <string name="bidang_pengabdian_masyarakat_1">SAMLANI</string>
+    <string name="wakil_ketua_iii">WAKIL KETUA III</string>
+    <string name="wakil_ketua_iii_1">HJ. ICAH NAFISAH</string>
+    <string name="bidang_koperasi_dan_permodalan">BIDANG KOPERASI DAN PERMODALAN</string>
+    <string name="bidang_koperasi_dan_permodalan_1">INDRA SUKANTO, SE.</string>
+    <string name="bidang_pengembangan_usaha">BIDANG PENGEMBANGAN USAHA</string>
+    <string name="bidang_pengembangan_usaha_1">RAHMADI HADI WIJAYA, SH.</string>
+    <string name="bidang_kemitraan_usaha">BIDANG KEMITRAAN USAHA</string>
+    <string name="bidang_kemitraan_usaha_1">BUDI SANTOSO, ST.</string>
+    <string name="wakil_ketua_iv">WAKIL KETUA IV</string>
+    <string name="wakil_ketua_iv_1">NURUL IMAN, SH.</string>
+    <string name="bidang_organisasi">BIDANG ORGANISASI</string>
+    <string name="bidang_organisasi_1">DANNY SUHENDAR HASAN, SE.</string>
+    <string name="bidang_keanggotaan">BIDANG KEANGGOTAAN</string>
+    <string name="bidang_keanggotaan_1">IWAN KUSMARA, SE.</string>
+    <string name="bidang_pemberdayaan_anggota">BIDANG PEMBERDAYAAN ANGGOTA</string>
+    <string name="bidang_pemberdayaan_anggota_1">CHOLID</string>
+    <string name="wakil_ketua_v">WAKIL KETUA V</string>
+    <string name="wakil_ketua_v_1">HJ. NURRY</string>
+    <string name="bidang_pembinaan_dan_pelatihan_sdm">BIDANG PEMBINAAN DAN PELATIHAN SDM</string>
+    <string name="bidang_pembinaan_dan_pelatihan_sdm_1">NANANG RISDIANTO, SL</string>
+    <string name="bidang_penelitian_dan_pengembangan">BIDANG PENELITIAN DAN PENGEMBANGAN</string>
+    <string name="bidang_penelitian_dan_pengembangan_1">FELIX ADRIAN, SL</string>
+    <string name="wakil_ketua_vi">WAKIL KETUA VI</string>
+    <string name="wakil_ketua_vi_1">SUTOMO, SH.</string>
+    <string name="bidang_hukum_dan_perundang_undangan">BIDANG HUKUM DAN PERUNDANG UNDANGAN</string>
+    <string name="bidang_hukum_dan_perundang_undangan_1">MULYANI, SH.</string>
+    <string name="bidang_perpajakan_dan_asuransi">BIDANG PERPAJAKAN DAN ASURANSI</string>
+    <string name="bidang_perpajakan_dan_asuransi_1">ABDURAHMAN SALEH, SH.</string>
+    <string name="pengumuman_fullscreen">Full Screen Pengumuman</string>
+    <string name="pengumuman_image">Announcement Image</string>
+    <string name="placeholder_judul">Announcement Title</string>
+    <string name="placeholder_tanggal">Announcement Date</string>
+    <string name="placeholder_isi">Announcement Content</string>
+
+</resources>

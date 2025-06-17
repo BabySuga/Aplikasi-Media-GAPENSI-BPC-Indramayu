@@ -1,0 +1,49 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">#FFFFFF</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="NamaPenjabatStruktur">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginBottom">2dp</item> </style>
+
+    <style name="NamaPenjabatSubStruktur" parent="NamaPenjabatStruktur">
+        <item name="android:paddingStart">8dp</item>
+    </style>
+
+    <style name="JabatanBidangStruktur" parent="NamaPenjabatStruktur">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#3F51B5</item>
+        <item name="android:layout_marginTop">6dp</item>
+    </style>
+
+    <style name="NamaBidangStruktur" parent="NamaPenjabatStruktur">
+    </style>
+
+    <style name="FasilitasImage">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">150dp</item> <item name="android:layout_weight">1</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:background">@android:color/darker_gray</item> <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="GaleriImage">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:background">@android:color/darker_gray</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+</resources>
